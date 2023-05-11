@@ -79,6 +79,14 @@ h1{
 h1 span{
     color: aqua;
 }
+/*nuevo titulo*/
+h5{
+    font-size: 3em;
+}
+
+h5 span{
+    color: rgb(255, 255, 255);
+}
 
 .main .info-content .icons{
     margin-top: 20px;
@@ -119,6 +127,11 @@ h1 span{
 }
 
 .titles h1{
+    padding: 20px;
+    text-align: center;
+}
+/*nuevo titulo*/
+.titles h5{
     padding: 20px;
     text-align: center;
 }
