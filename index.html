@@ -1,84 +1,163 @@
 <!DOCTYPE html>
-<html lang="en-es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="scss/style.css">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/d340ad0562.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <nav class="navbar">
-                <div class="brand">
-                    <h2>J<span>C</span></h2>
-                </div>
-                <ul class="menu">
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-        <div class="main">
-            <div class="info-content">
-                <h1>I'm <span>Juan</span> Camilo</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ullam velit facere nihil autem tenetur quia excepturi consequuntur, dolores odit molestiae pariatur neque nemo temporibus natus labore necessitatibus dolor amet?</p>
-                <div class="icons">
-                    <a href="" class="link-icons"><span class="fa-brands fa-github"></span></a>
-                    <a href="" class="link-icons"><span class="fa-brands fa-linkedin"></span></a>
-                    <a href="" class="link-icons"><span class="fa-brands fa-whatsapp"></span></a>
-                </div>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About us</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!--home section-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, welcome to</h3>
+            <h1>JoCa.com</h1>
+            <h3>And we're <span>Software Developers</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit velit ipsa ratione, voluptates fugiat expedita optio rem reiciendis excepturi doloribus blanditiis eius repudiandae harum cupiditate, quos consectetur saepe vel assumenda!</p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
-            <img src="./img/pexels-photo-1516680-removebg-preview.pn" alt="Juan Camilo picture">
+
+            <a href="#" class="btn">Download CV</a>
         </div>
 
-        <div class="titles">
-            <h1>Portfolio</h1>
+        <div class="home-img">
+            <img src="https://i.blogs.es/66b2a4/photo-1511367461989-f85a21fda167/1366_2000.webp" alt="Image">
+        </div>
+    </section>
+
+    <!--home me section-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="https://i.blogs.es/66b2a4/photo-1511367461989-f85a21fda167/1366_2000.webp" alt="about me image">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Us</span></h2>
+            <h3>Software Developers</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate repellendus amet minus, alias, animi consectetur vitae tempore, corrupti temporibus eaque quasi magni ipsa necessitatibus est porro unde culpa recusandae a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore earum consequuntur hic corrupti atque delectus eum praesentium, non quam minima eos sit deserunt doloribus. Quaerat, id eius. Quas, recusandae odio.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!--services section-->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i> 
+                <h3>Frontend Development</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, vitae accusantium perspiciatis delectus voluptatibus animi saepe libero velit vel qui sint, a nisi temporibus asperiores quas quibusdam quia sunt quidem.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-regular fa-file-code"></i>
+                <h3>Backend Development</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, vitae accusantium perspiciatis delectus voluptatibus animi saepe libero velit vel qui sint, a nisi temporibus asperiores quas quibusdam quia sunt quidem.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-window-maximize"></i>
+                <h3>Desktop Development</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, vitae accusantium perspiciatis delectus voluptatibus animi saepe libero velit vel qui sint, a nisi temporibus asperiores quas quibusdam quia sunt quidem.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!--portfolio section-->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="img/Captura.PNG" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum pariatur delectus beatae qui.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/Captura.PNG" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, adipisci illum numquam.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/Captura.PNG" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, adipisci illum numquam.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="img/Captura.PNG" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, adipisci illum numquam.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contact section-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Us</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input id="in-name" type="text" placeholder="Full Name">
+                <input id="in-email" type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input id="in-number" type="number" placeholder="Mobile Number">
+                <input id="in-subject" type="text" placeholder="Email Subject">
+            </div>
+            <textarea id="in-message" name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button id="submit" type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!--footer section-->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>No se que poner pero bueno, hay footer</p>
         </div>
 
-        <div class="projects">
-            <div class="project-item">
-                <div class="project-image">
-                    <img src="https://www.educaciontrespuntocero.com/wp-content/uploads/2019/01/Apertura-978x652.jpg.webp" alt="">
-                </div>
-                <h3>Titulo</h3>
-                <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque cupiditate veritatis quia non asperiores minus, iusto illo deserunt architecto neque perferendis ipsam, vitae dicta, officiis expedita provident? Reiciendis, natus sint!</p>
-            </div>
-            <div class="project-item">
-                <div class="project-image">
-                    <img src="https://www.educaciontrespuntocero.com/wp-content/uploads/2019/01/Apertura-978x652.jpg.webp" alt="">
-                </div>
-                <h3>Titulo</h3>
-                <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque cupiditate veritatis quia non asperiores minus, iusto illo deserunt architecto neque perferendis ipsam, vitae dicta, officiis expedita provident? Reiciendis, natus sint!</p>
-            </div>
-            <div class="project-item">
-                <div class="project-image">
-                    <img src="https://www.educaciontrespuntocero.com/wp-content/uploads/2019/01/Apertura-978x652.jpg.webp" alt="">
-                </div>
-                <h3>Titulo</h3>
-                <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque cupiditate veritatis quia non asperiores minus, iusto illo deserunt architecto neque perferendis ipsam, vitae dicta, officiis expedita provident? Reiciendis, natus sint!</p>
-            </div>
-            <div class="project-item">
-                <div class="project-image">
-                    <img src="https://www.educaciontrespuntocero.com/wp-content/uploads/2019/01/Apertura-978x652.jpg.webp" alt="">
-                </div>
-                <h3>Titulo</h3>
-                <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque cupiditate veritatis quia non asperiores minus, iusto illo deserunt architecto neque perferendis ipsam, vitae dicta, officiis expedita provident? Reiciendis, natus sint!</p>
-            </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-circle-up"></i></a>
         </div>
+    </footer>
 
-        <div class="titles">
-            <h1>About me</h1>
-        </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-        <div class="info">
-            
-        </div>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
